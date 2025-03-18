@@ -13,6 +13,6 @@ public class MsgController {
 
     @PostMapping
     public void sendOrder(String msgId, String msg){
-        kafkaTemplate.send("Привет", msgId, msg);
+        kafkaTemplate.send("Привет, всем", msgId, msg);
     }
 }
